@@ -1,3 +1,56 @@
 *{
     margin: 15px;
 }
+
+/*header*/
+header{
+    display: flex;
+    align-items: center;
+    justify-content:left;
+}
+.bambi{
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.header-links{
+    display: flex;
+    margin-left: 200px;
+}
+.about{
+    margin-right: 50px;   
+}
+.works{
+    margin-right: 50px;
+}
+.contact{
+    margin-left: 10px;   
+}
+
+.side-by-side{
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    border: solid whitesmoke;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    box-shadow: 0 0px 10px purple;
+}
+/*texts*/
+.text{
+    margin-top: 50px;
+}
+
+h3{
+    font-weight: bold;
+    font-family:'Courier New', Courier, monospace;
+}
+h2{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.p1, ul, .p2, .p3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.p1, ul, h3, h2, .p2, .p3{
+    color: purple;
+}
