@@ -54,3 +54,28 @@ h2{
 .p1, ul, h3, h2, .p2, .p3{
     color: purple;
 }
+
+.p2, .p3{
+    margin-top: 30px;
+}
+
+.fa-square-x-twitter, .fa-square-instagram, .fa-linkedin, .fa-square-whatsapp{
+    font-size: 30px;
+    
+}
+
+.fa-square-x-twitter{
+    color: black;
+}
+
+.fa-square-instagram{
+    color: crimson;
+}
+
+.fa-linkedin{
+    color: blue;
+}
+
+.fa-square-whatsapp{
+    color: forestgreen;
+}
