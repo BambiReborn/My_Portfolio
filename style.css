@@ -1,5 +1,5 @@
 *{
-    margin: 15px;
+    margin: 1rem;
 }
 
 /*header*/
@@ -14,16 +14,10 @@ header{
 }
 .header-links{
     display: flex;
-    margin-left: 200px;
+    margin-left: 15rem;
 }
-.about{
-    margin-right: 50px;   
-}
-.works{
-    margin-right: 50px;
-}
-.contact{
-    margin-left: 10px;   
+.about, .works{
+    margin-right: 3.2rem;   
 }
 
 .side-by-side{
@@ -31,13 +25,13 @@ header{
     display: flex;
     justify-content: space-between;
     border: solid whitesmoke;
-    border-bottom-left-radius: 50px;
-    border-top-right-radius: 50px;
+    border-bottom-left-radius: 3rem;
+    border-top-right-radius: 3rem;
     box-shadow: 0 0px 10px purple;
 }
 /*texts*/
 .text{
-    margin-top: 50px;
+    margin-top: 3.2rem;
 }
 
 h3{
@@ -45,7 +39,7 @@ h3{
     font-family:'Courier New', Courier, monospace;
 }
 h2{
-    font-size: 20px;
+    font-size: 1.4rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 .p1, ul, .p2, .p3{
@@ -56,11 +50,11 @@ h2{
 }
 
 .p2, .p3{
-    margin-top: 30px;
+    margin-top: 2rem;
 }
 
 .fa-square-x-twitter, .fa-square-instagram, .fa-linkedin, .fa-square-whatsapp{
-    font-size: 30px;
+    font-size: 2rem;
     
 }
 
@@ -78,4 +72,11 @@ h2{
 
 .fa-square-whatsapp{
     color: forestgreen;
+}
+
+footer{
+    background-color: wheat;
+    text-align: center;
+    margin: 2rem 0 0 0;
+    max-width: 100%;
 }
