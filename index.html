@@ -13,9 +13,9 @@
     <header>
         <h4 class="bambi">Bambi😎</h4>
         <nav class="header-links">
-            <a href="#section-2" class="about">About</a>
-            <a href="#section-3" class="skills">Skills</a>
-            <a href="#section-4" class="projects">Projects</a>
+            <a href="#section-2" class="about">About |</a>
+            <a href="#section-3" class="skills">Skills |</a>
+            <a href="#section-4" class="projects">Projects |</a>
             <a href="#section-5" class="contact">ContactMe</a>
         </nav>
         <nav class="socials">
@@ -42,7 +42,7 @@
         <div class="side-by-side">
             <div class="text">
             <p class="andiam">And I'm a:</p>
-            <ul>
+            <ul id="list">
                 <li>Web development intern at GenesysTechHub</li>
                 <li>Graphic Designer</li>
                 <li>Forex Trader</li>
@@ -109,8 +109,9 @@
                 <h3 class="skills-h3">
                     CSS
                 </h3>
-                <p>
-                    This is where the vibe kicks in. With CSS, I bring life to the web-layouts, colors, animations, responsiveness, and those tiny details that make people say “damn, that’s nice.” Whether it’s Flexbox, Grid, media queries or variables, I style with purpose and precision. Aesthetics matter, and I’ve got the eye.
+                <p class="skills-p">
+                    This is where the vibe kicks in. With CSS, I bring life to the web-layouts, colors, animations, responsiveness, and those tiny details that make people say “damn, that’s nice.” Whether it’s Flexbox, Grid, media queries or variables, I style with purpose and precision. Aesthetics matter, and I’ve got the eye. I don’t just make things look good, I make them feel right.
+                    From sleek dark modes to smooth transitions, I turn ideas into visual magic.
                 </p>
                 <div class="css-85">
                     <h3>85%</h3>
@@ -122,7 +123,7 @@
                 <h3 class="skills-h3">
                     TRADING
                 </h3>
-                <p>
+                <p class="skills-p">
                     Outside of web dev, I’m also a Forex trader, and not just by vibes. I study market structure, liquidity zones, and smart money concepts like a strategist. Trading taught me patience, risk control, and discipline, skills that bleed beautifully into my approach to tech. I don’t just chase pips, I understand flow. Whether it’s waiting for confirmation before an entry or managing emotions during a volatile session, I bring the same mindset of clarity and control to both charts and code.
                 </p>
                 <div class="trading-85">
@@ -143,15 +144,18 @@
         <div class="home-link">
             <a href="#section-1" class="home-icon"><i class="fa-solid fa-house"></i></a>
         </div>
+        <h3 class="project-h3">
+            Projects
+        </h3>
         <div class="project-father">
             <div class="project-card">
                 <img src="SwiftNet shot.png" width="300">
                 <div>
-                    <h4>
+                    <h4 class="swiftNet-h4">
                         SwiftNet
                     </h4>
-                    <p>
-                        A fictional company called SwiftNet
+                    <p class="swiftNet-p">
+                        A fictional tech company called SwiftNet
                     </p>
                 </div>
             </div>
@@ -159,10 +163,10 @@
             <div class="project-card">
                 <img src="myform done.png" width="300">
                 <div>
-                    <h4>
+                    <h4 class="myform-h4">
                         Feed-back Form
                     </h4>
-                    <p>
+                    <p class="myform-p">
                         A personal project for a feed-back form
                     </p>
                 </div>
@@ -171,10 +175,10 @@
             <div class="project-card">
                 <img src="facebook-zinny done.png" width="300">
                 <div>
-                    <h4>
+                    <h4 class="facebook-h4">
                         Facebook log-in Clone
                     </h4>
-                    <p>
+                    <p class="facebook-p">
                         This was actually a project from a friend.
                     </p>
                 </div>
@@ -183,31 +187,33 @@
     </section>
 
     <!--contact page-->
-    <section class="section-5" id="section-5>
+    <section class="section-5" id="section-5">
         <div class="home-link">
             <a href="#section-1" class="home-icon"><i class="fa-solid fa-house"></i></a>
         </div>
-        <div class="contact-inputs">
-            <form>
-                <label for="name">Name</label><br>
-                <input type="text" id="name" placeholder="Enter your name" required>
+        <form>
+            <div class="contact-inputs">
+                <div class="name-input">
+                    <label for="name">Name</label><br>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
 
-                <label for="email">Email</label><br>
-                <input type="email" id="email" placeholder="example@gmail.com" required><br>
-
-                <label for="Message">Message</label><br>
+                <div class="email-input">
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" placeholder="example@gmail.com" required><br>
+                </div>
+            </div>
+            <label for="Message" class="msg">Message</label><br>
                 <textarea id="Message" placeholder="Write your message"></textarea><br>
 
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-
+            <button type="submit">Submit</button>
+        </form>
         <!--socials-->
         <nav class="buttom-socials">
-            <a href="https://x.com/BambiReborn7?t=Z8x_Q1MTSmK9iL6Gz7ITOQ&s=09"><i class="fa-brands fa-square-x-twitter"></i></a>
-            <a href="https://www.instagram.com/bambireborn7?utm_source=qr&igsh=bDJ5Y290ZnQ5dHE1"><i class="fa-brands fa-square-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/chukwuemeka-bencollins-7934b6278?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="Message Bambi on WhatsApp. https://wa.me/2348165191505"><i class="fa-brands fa-square-whatsapp"></i></a>
+            <a href="https://x.com/BambiReborn7?t=Z8x_Q1MTSmK9iL6Gz7ITOQ&s=09" class="bottom-socials"><i class="fa-brands fa-square-x-twitter"></i></a>
+            <a href="https://www.instagram.com/bambireborn7?utm_source=qr&igsh=bDJ5Y290ZnQ5dHE1" class="bottom-socials"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/chukwuemeka-bencollins-7934b6278?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="bottom-socials"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="Message Bambi on WhatsApp. https://wa.me/2348165191505" class="bottom-socials"><i class="fa-brands fa-square-whatsapp"></i></a>
         </nav>
     </section>
 

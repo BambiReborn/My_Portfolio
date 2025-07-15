@@ -9,7 +9,7 @@
     --color-2: white;
     --color-3: #151515;
     --color-4: black;
-    --color-5: blue;
+    --color-5: #1616ab;
     --font-1: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
@@ -18,11 +18,12 @@
 /*header*/
 header{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
     height: 50px;
-    background-color: orangered;
+    background-color: var(--color-1);
 }
 .bambi{
 font-family: var(--font-1);
@@ -66,6 +67,7 @@ text-shadow: 2px 2px 2px var(--color-3);
 
 /*body*/
 body{
+    flex-wrap: wrap;
     color: var(--color-2);
     font-family: cursive;
     background-color: var(--color-3);
@@ -178,16 +180,18 @@ body{
     margin: 20px;
     padding: 20px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 .html, .css, .trading{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     width: 17rem;
     padding: 15px;
-    border: solid var(--color-4);
+    border: 1px solid var(--color-2);
     border-radius: 20px;
     background-color: var(--color-4);
 }
@@ -207,6 +211,358 @@ body{
     background-color: var(--color-1);
 }
 
+/*projects section-4*/
+.project-h3{
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+.project-father{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.project-card{
+    flex-wrap: wrap;
+    align-items: center;
+    width: 17rem;
+    height: 25rem;
+    margin-bottom: 10px;
+    border: 1px solid var(--color-2);
+    border-radius: 20px;
+    background-color: var(--color-4);
+}
+.project-card img{
+    width: 100%;
+    height: 40%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.swiftNet-h4, .swiftNet-p{
+    text-align: center;
+    margin-top: 10px;
+}
+
+/*contact page section-5*/
+.contact-inputs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.name-input, .email-input{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+label{
+    font-size: 2em;
+}
+input{
+    padding: 10px;
+    width: 30rem;
+    color: var(--color-2);
+    border-radius: 10px;
+    border: 1px solid var(--color-2);
+    background-color: var(--color-4);
+}
+
+.msg, textarea{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+}
+textarea{
+    flex-wrap: wrap;
+    padding: 15px;
+    width: 30rem;
+    height: 5rem;
+    color: var(--color-2);
+    border-radius: 10px;
+    border: 1px solid var(--color-2);
+    background-color: var(--color-4);
+}
+button{
+    flex-wrap: wrap;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 5px;
+    width: 10rem;
+    color: var(--color-2);
+    border-radius: 5px;
+    border: 1px solid var(--color-2);
+    background-color: var(--color-4);
+}
+button:hover{
+    cursor: pointer;
+    background-color: var(--color-3);
+    transition: background-color 1s ease;
+    animation: fade-in 4s ease-in-out;
+}
+
+.button-socials{
+    display: flex;
+    gap: 30px;
+}
+.bottom-socials{
+    font-size: 2em;
+    color: var(--color-2);
+}
+
+/*footer*/
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-color: var(--color-4);
+}
 
 
+/*MEDIA QUERIES*/
 
+/*laptop small*/
+@media (max-width: 1024px) {
+    .holla, .idesign, .text, .wannaknowmore{
+        margin-top: 20px;
+    }
+    .html, .css, .trading{
+        width: 14rem;
+    }
+}
+
+/*tablet*/
+@media (max-width: 768px) {
+    .header-links{
+        display: flex;
+        gap: 30px;
+    }
+    .holla, .idesign, .text, .wannaknowmore{
+        margin-top: 0px;
+    }
+    .holla{
+        font-size: 1.1em;
+    }
+    .myname{
+        font-size: 1.3em;
+        margin-left: 50px;
+    }
+    .idesign{
+        font-size: 3.5em;
+        margin-top: 20px;
+    }
+    #list{
+        font-size: 0.7em;
+    }
+    .andiam{
+        font-size: 0.9em;
+    }
+    .wannaknowmore{
+        font-size: 0.9em;
+    }
+    .skills-father{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .trading{
+        justify-self: center;
+        align-self: center;
+        margin: 10px;
+    }
+    .project-father{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .project-card{
+        margin-top: 10px;
+        width: 15rem;
+    }
+    .home-link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 2.5%;
+        padding: 2.5px;
+    }
+    .home-icon{
+        font-size: 1em;
+    }
+    .html-90, .css-85, .trading-85{
+        margin-top: 13px;
+        padding: 3px;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px;
+    }
+    .header-links, .socials{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+    label{
+        font-size: 1em;
+    }
+    input{
+        padding: 7px;
+        width: 20rem;
+    }
+    textarea{
+        padding: 12px;
+        width: 20rem;
+        height: 3rem;
+    }
+    button{
+        padding: 3px;
+        width: 7rem;
+    }
+    .bottom-socials{
+        font-size: 1.5em;
+    }
+    footer{
+        padding: 3px;
+        font-size: 0.7em;
+    }
+}   
+
+/*mobile*/
+@media (max-width: 520px) {
+    header{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px;
+    }    
+    .bambi{
+        font-size: 0.8em;
+    }
+    .header-links{
+        display: block;
+        position: relative;
+    }
+    .about, .projects, .skills, .contact{
+        font-size: 0.8em;
+    }
+    .socials{
+        display: block;
+        position: relative;
+        justify-self: end;
+        align-self: end;
+    }
+    #twitter, #instagram, #linkedin, #whatsapp{
+        font-size: 1em;
+        color: var(--color-2);
+        text-shadow: 1.5px 1.5px 1.5px var(--color-4);
+    }
+    .section-1{
+        padding: 60px;
+    }
+    .holla{
+        font-size: 0.8em;
+    }
+    .myname{
+        font-size: 1em;
+    }
+    .idesign{
+        font-size: 3em;
+    }
+    .andiam, .wannaknowmore{
+        font-size: 0.6em;
+    }
+    #list{
+        font-size: 0.5em;
+    }
+    .section-2, .section-3, .section-4, .section-5{
+        padding: 10px;
+    }
+    .home-link{
+        width: 3%;
+        padding: 3px;
+    }
+    .home-icon{
+        font-size: 0.8em;
+    }
+    .aboutme{
+        margin: 20px;
+    }
+    .about-h1, .skills-h1, .project-h3{
+        font-size: 1.5em;
+    }
+    .skills-h3{
+        font-size: 1em;
+    }
+    .about-p, .skills-p{
+        font-size: 0.8em;
+    }
+    .css{
+        margin-top: 10px;
+    }
+}
+@media (max-width: 430px){
+    .about-h1, .skills-h1, .project-h3{
+        font-size: 1em;
+    }
+    .skills-h3{
+        font-size: 0.8em;
+    }
+    .about-p, .skills-p, .swiftNet-p, .myform-p, .facebook-p{
+        font-size: 0.4em;
+    }
+    .html, .css, .trading, .project-card{
+        width: 8rem;
+    }
+    label{
+        font-size: 0.6em;
+    }
+    input{
+        padding: 4px;
+        width: 10rem;
+        border-radius: 5px;
+    }
+    .name-input{
+        margin-bottom: 30px;
+    }
+    textarea{
+        width: 15rem;
+    }
+    button{
+        width: 4rem;
+    }
+    .bottom-socials{
+        font-size: 1em;
+    }
+    footer{
+        padding: 2.5px;
+        font-size: 0.5em;
+    }
+}
+
+@media (max-width: 340px) {
+    .project-father{
+        display: grid;
+        grid-template-columns: repeat(1, 1rf);
+    }
+    .project-card{
+        height: 18rem;
+    }
+    input{
+        border-radius: 5px;
+    }
+    textarea{
+        width: 10rem;
+        padding: 5px;
+    }
+}
+    
