@@ -5,7 +5,7 @@
 
 /*root*/
 :root{
-    --color-1: orangered;
+    --color-1: crimson;
     --color-2: white;
     --color-3: #151515;
     --color-4: black;
@@ -510,9 +510,11 @@ footer{
         margin-top: 10px;
     }
 }
+
+
 @media (max-width: 430px){
     .section-1{
-        height: 60vh;
+        height: 80vh;
     }
     .andiam, .wannaknowmore{
         font-size: 1em;
@@ -532,14 +534,24 @@ footer{
     .about-p, .skills-p, .swiftNet-p, .myform-p, .facebook-p{
         font-size: 0.8em;
     }
+    
     .html, .css, .trading, .project-card{
         width: 8rem;
+    }
+    .project-father{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        align-items: center;
+    }
+    .project-card{
+        height: 15rem;
     }
     label{
         font-size: 0.6em;
     }
     input{
-        padding: 4px;
+        padding: 5px;
         width: 10rem;
         border-radius: 5px;
     }
@@ -552,8 +564,16 @@ footer{
     button{
         width: 4rem;
     }
+    .bottom-nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .bottom-socials{
         font-size: 1em;
+        
+        
+        
     }
     footer{
         padding: 2.5px;
@@ -562,6 +582,15 @@ footer{
 }
 
 @media (max-width: 340px) {
+    .section-1{
+        height: 90vh;
+        padding: 30px;
+    }
+    .side-by-side{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
     .project-father{
         display: grid;
         grid-template-columns: repeat(1, 1rf);
