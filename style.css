@@ -69,7 +69,7 @@ text-shadow: 2px 2px 2px var(--color-3);
 body{
     flex-wrap: wrap;
     color: var(--color-2);
-    font-family: cursive;
+    font-family: consolas;
     background-color: var(--color-3);
 }
 
@@ -102,13 +102,13 @@ body{
 }
 .holla{
     font-size: 1.8em;
-    font-family: cursive;
+    font-family: consolas;
     margin-bottom: 0px;
     text-shadow: 2px 2px 2px var(--color-4);
 }
 .myname{
     font-size: 2em;
-    font-family: cursive;
+    font-family: consolas;
     margin-top: 0;
     margin-left: 80px;
     text-shadow: 2px 2px 2px var(--color-4);
